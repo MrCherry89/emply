@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<title>EmplyMe</title>
+	<link rel="stylesheet" href="libs/libs-css/magnific-popup.css">
+	<link rel="stylesheet" href="libs/libs-css/select2.min.css">
+	<link rel="stylesheet" href="libs/libs-css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="no-bg">
+
+	<div class="main-wrap">
+		<header class="header__no-fixed">
+			<div class="container header__container">
+				<a href="#" class="drop-menu2">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</a>
+				<a href="specialists.html" class="logo">логотип</a>
+				<ul class="header__sidebar-menu">
+					<li>
+						<a href="personal-area.html">
+							<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 1H1V14.5H7.75L10 16.75L12.25 14.5H19V1Z" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M10 8.20001C11.2426 8.20001 12.25 7.19265 12.25 5.95001C12.25 4.70737 11.2426 3.70001 10 3.70001C8.75736 3.70001 7.75 4.70737 7.75 5.95001C7.75 7.19265 8.75736 8.20001 10 8.20001Z" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M14.0502 11.8C14.0502 9.81191 12.2367 8.20001 10.0002 8.20001C7.7637 8.20001 5.9502 9.81191 5.9502 11.8" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+							<span>Личный кабинет</span>
+						</a>
+					</li>
+					<li>
+						<a href="tariffs.html">
+							<svg class="white" width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12.5714 6.28571C12.5714 7.11925 12.2402 7.91864 11.6508 8.50804C11.0614 9.09745 10.262 9.42857 9.4285 9.42857C8.59496 9.42857 7.79557 9.09745 7.20617 8.50804C6.61677 7.91864 6.28564 7.11925 6.28564 6.28571C6.28564 5.45217 6.61677 4.65277 7.20617 4.06337C7.79557 3.47397 8.59496 3.14285 9.4285 3.14285C10.262 3.14285 11.0614 3.47397 11.6508 4.06337C12.2402 4.65277 12.5714 5.45217 12.5714 6.28571ZM10.9999 6.28571C10.9999 5.86894 10.8344 5.46924 10.5397 5.17454C10.245 4.87984 9.84527 4.71428 9.4285 4.71428C9.01173 4.71428 8.61203 4.87984 8.31733 5.17454C8.02263 5.46924 7.85707 5.86894 7.85707 6.28571C7.85707 6.70248 8.02263 7.10218 8.31733 7.39688C8.61203 7.69158 9.01173 7.85714 9.4285 7.85714C9.84527 7.85714 10.245 7.69158 10.5397 7.39688C10.8344 7.10218 10.9999 6.70248 10.9999 6.28571Z" />
+								<path d="M0 1.96429C0 0.88 0.88 0 1.96429 0H16.8929C17.9771 0 18.8571 0.88 18.8571 1.96429V10.6071C18.8571 11.6914 17.9771 12.5714 16.8929 12.5714H1.96429C0.88 12.5714 0 11.6914 0 10.6071V1.96429ZM1.96429 1.57143C1.86009 1.57143 1.76017 1.61282 1.68649 1.68649C1.61282 1.76017 1.57143 1.86009 1.57143 1.96429V3.14286H2.35714C2.56553 3.14286 2.76538 3.06008 2.91273 2.91273C3.06008 2.76538 3.14286 2.56553 3.14286 2.35714V1.57143H1.96429ZM1.57143 10.6071C1.57143 10.824 1.74743 11 1.96429 11H3.14286V10.2143C3.14286 10.0059 3.06008 9.80605 2.91273 9.6587C2.76538 9.51135 2.56553 9.42857 2.35714 9.42857H1.57143V10.6071ZM4.71429 10.2143V11H14.1429V10.2143C14.1429 9.58913 14.3912 8.98958 14.8332 8.54753C15.2753 8.10548 15.8748 7.85714 16.5 7.85714H17.2857V4.71429H16.5C15.8748 4.71429 15.2753 4.46594 14.8332 4.02389C14.3912 3.58184 14.1429 2.9823 14.1429 2.35714V1.57143H4.71429V2.35714C4.71429 2.9823 4.46594 3.58184 4.02389 4.02389C3.58184 4.46594 2.9823 4.71429 2.35714 4.71429H1.57143V7.85714H2.35714C2.9823 7.85714 3.58184 8.10548 4.02389 8.54753C4.46594 8.98958 4.71429 9.58913 4.71429 10.2143ZM15.7143 11H16.8929C16.997 11 17.097 10.9586 17.1707 10.8849C17.2443 10.8113 17.2857 10.7113 17.2857 10.6071V9.42857H16.5C16.2916 9.42857 16.0918 9.51135 15.9444 9.6587C15.7971 9.80605 15.7143 10.0059 15.7143 10.2143V11ZM17.2857 3.14286V1.96429C17.2857 1.86009 17.2443 1.76017 17.1707 1.68649C17.097 1.61282 16.997 1.57143 16.8929 1.57143H15.7143V2.35714C15.7143 2.56553 15.7971 2.76538 15.9444 2.91273C16.0918 3.06008 16.2916 3.14286 16.5 3.14286H17.2857Z" />
+								<path d="M5.50024 15.7143C5.00244 15.7145 4.51736 15.5571 4.11453 15.2646C3.7117 14.9721 3.4118 14.5597 3.25781 14.0863C3.47624 14.124 3.69938 14.1429 3.92881 14.1429H16.8931C17.8308 14.1429 18.7302 13.7703 19.3932 13.1073C20.0563 12.4442 20.4288 11.5449 20.4288 10.6071V3.27643C20.8886 3.43898 21.2866 3.74013 21.5681 4.13837C21.8495 4.53661 22.0005 5.01234 22.0002 5.5V10.6071C22.0002 11.2778 21.8681 11.9419 21.6115 12.5616C21.3548 13.1812 20.9786 13.7442 20.5044 14.2184C20.0302 14.6927 19.4671 15.0689 18.8475 15.3255C18.2279 15.5822 17.5638 15.7143 16.8931 15.7143H5.50024Z" />
+							</svg>
+
+							<span>Тарифы</span>
+						</a>
+					</li>
+					<li>
+						<a href="documents.html">
+							<svg class="white" width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.503 2.627L1.5 4.75V15.254C1.5 16.116 1.84241 16.9426 2.4519 17.5521C3.0614 18.1616 3.88805 18.504 4.75 18.504H13.366C13.2107 18.9427 12.9233 19.3225 12.5433 19.5911C12.1633 19.8598 11.7094 20.004 11.244 20.004H4.75C3.49022 20.004 2.28204 19.5036 1.39124 18.6128C0.500445 17.722 0 16.5138 0 15.254V4.75C0 3.77 0.627 2.935 1.503 2.627ZM9.128 0C9.725 0 10.298 0.237 10.72 0.66L15.338 5.28C15.76 5.702 15.997 6.275 15.997 6.871V15.254C15.997 15.8507 15.7599 16.423 15.338 16.845C14.916 17.2669 14.3437 17.504 13.747 17.504H4.752C4.15526 17.504 3.58297 17.2669 3.16101 16.845C2.73905 16.423 2.502 15.8507 2.502 15.254V2.25C2.502 1.65326 2.73905 1.08097 3.16101 0.65901C3.58297 0.237053 4.15526 0 4.752 0H9.128ZM9 1.5H4.752C4.55309 1.5 4.36232 1.57902 4.22167 1.71967C4.08102 1.86032 4.002 2.05109 4.002 2.25V15.254C4.002 15.668 4.338 16.004 4.752 16.004H13.747C13.9459 16.004 14.1367 15.925 14.2773 15.7843C14.418 15.6437 14.497 15.4529 14.497 15.254V7.003H11.25C10.68 7.00309 10.1313 6.78686 9.71457 6.398C9.29786 6.00913 9.04426 5.47661 9.005 4.908L9 4.754V1.5ZM10.5 2.561L10.501 4.754C10.501 5.134 10.783 5.447 11.149 5.497L11.251 5.504L13.441 5.503L10.501 2.561H10.5Z" />
+							</svg>
+							<span>Мои документы</span>
+						</a>
+					</li>
+					<li class="active">
+						<a href="base-specialists.html">
+							<svg class="white" width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M7.59804 2.04537C6.85736 2.04537 6.14703 2.33262 5.62329 2.84391C5.09956 3.35521 4.80533 4.04867 4.80533 4.77175C4.80533 5.49483 5.09956 6.1883 5.62329 6.69959C6.14703 7.21089 6.85736 7.49813 7.59804 7.49813C8.33871 7.49813 9.04905 7.21089 9.57278 6.69959C10.0965 6.1883 10.3907 5.49483 10.3907 4.77175C10.3907 4.04867 10.0965 3.35521 9.57278 2.84391C9.04905 2.33262 8.33871 2.04537 7.59804 2.04537ZM2.71079 4.77175C2.71069 3.98093 2.91195 3.20248 3.29647 2.50643C3.68098 1.81038 4.23669 1.21854 4.91362 0.784169C5.59054 0.349792 6.36745 0.0864935 7.17447 0.0179541C7.98148 -0.0505854 8.79329 0.0777842 9.53688 0.391517C10.2805 0.705249 10.9325 1.19451 11.4344 1.81528C11.9362 2.43605 12.2722 3.16888 12.412 3.94784C12.5517 4.7268 12.491 5.52746 12.2352 6.27782C11.9794 7.02818 11.5366 7.7047 10.9465 8.24652C12.0592 8.77352 13.0253 9.55474 13.7628 10.5239C14.5003 11.4931 14.9875 12.6216 15.183 13.8138C15.2046 13.9464 15.1992 14.0819 15.1671 14.2125C15.135 14.3431 15.0768 14.4663 14.996 14.575C14.9151 14.6836 14.8132 14.7757 14.6959 14.8459C14.5786 14.9161 14.4483 14.9631 14.3124 14.9841C14.1765 15.0051 14.0377 14.9998 13.904 14.9685C13.7702 14.9372 13.644 14.8804 13.5327 14.8015C13.4214 14.7226 13.3271 14.623 13.2552 14.5085C13.1833 14.394 13.1352 14.2668 13.1136 14.1341C12.9023 12.8546 12.2312 11.6903 11.2205 10.85C10.2098 10.0096 8.92562 9.54808 7.59804 9.54808C6.27045 9.54808 4.98625 10.0096 3.97555 10.85C2.96486 11.6903 2.29373 12.8546 2.08243 14.1341C2.0608 14.2668 2.01261 14.394 1.94062 14.5085C1.86863 14.6229 1.77425 14.7224 1.66287 14.8013C1.55149 14.8802 1.42529 14.9368 1.29147 14.9681C1.15765 14.9993 1.01884 15.0045 0.882966 14.9834C0.747088 14.9623 0.616801 14.9152 0.499546 14.845C0.382291 14.7747 0.280364 14.6825 0.199584 14.5738C0.118803 14.4651 0.060752 14.3419 0.0287443 14.2112C-0.00326341 14.0806 -0.00860067 13.9451 0.0130372 13.8124C0.208994 12.6207 0.696378 11.4928 1.43387 10.5241C2.17137 9.55542 3.13723 8.77462 4.24958 8.24789C3.76299 7.80218 3.37534 7.26367 3.11065 6.66573C2.84595 6.06778 2.70986 5.42314 2.71079 4.77175ZM15.278 2.72697C15.0002 2.72697 14.7339 2.83468 14.5375 3.02642C14.3411 3.21816 14.2307 3.47821 14.2307 3.74936C14.2307 4.02052 14.3411 4.28057 14.5375 4.4723C14.7339 4.66404 15.0002 4.77175 15.278 4.77175C15.7504 4.77178 16.209 4.92774 16.5792 5.21431C16.9494 5.50088 17.2095 5.90122 17.3172 6.35031C17.425 6.7994 17.374 7.27085 17.1726 7.68809C16.9712 8.10533 16.6313 8.44385 16.208 8.64867C16.0334 8.73343 15.8865 8.86409 15.7839 9.02594C15.6813 9.18778 15.627 9.37438 15.6271 9.56473V10.0446C15.6268 10.2742 15.7057 10.4973 15.8511 10.6778C15.9965 10.8583 16.1999 10.9858 16.4286 11.0397C18.1042 11.4337 19.4475 12.6755 19.9502 14.2732C19.9901 14.4021 20.0556 14.522 20.1431 14.6261C20.2306 14.7302 20.3383 14.8164 20.46 14.8797C20.5817 14.9431 20.715 14.9824 20.8523 14.9953C20.9895 15.0082 21.1281 14.9945 21.2599 14.955C21.3918 14.9155 21.5143 14.851 21.6206 14.7651C21.7268 14.6793 21.8146 14.5738 21.879 14.4547C21.9433 14.3356 21.983 14.2053 21.9956 14.0712C22.0082 13.9371 21.9936 13.8019 21.9526 13.6734C21.6731 12.7881 21.2121 11.9676 20.5976 11.2617C19.983 10.5558 19.2278 9.97939 18.3779 9.56745C18.9238 8.9812 19.2835 8.25276 19.4133 7.47067C19.5432 6.68858 19.4375 5.88652 19.1091 5.16197C18.7808 4.43742 18.2439 3.82158 17.5638 3.3893C16.8837 2.95703 16.0896 2.72693 15.278 2.72697Z" />
+							</svg>
+							<span>База специалистов</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M10 2.2474L12.0551 6.38369L12.2875 6.85147L12.8042 6.92795L17.3732 7.60432L14.0744 10.837L13.7013 11.2026L13.7882 11.7177L14.5569 16.272L10.463 14.1336L10 13.8918L9.53702 14.1336L5.44314 16.272L6.21175 11.7177L6.29868 11.2026L5.92562 10.837L2.62684 7.60432L7.19576 6.92795L7.71246 6.85147L7.94487 6.38369L10 2.2474Z" stroke="white" stroke-width="2" />
+							</svg>
+							<span>Избранное</span>
+						</a>
+					</li>
+				</ul>
+				<div class="header__icons">
+					<a href="#"><img src="img/icon_notifications.svg" alt=""></a>
+					<a href="#"><img src="img/icon_sign%20in.svg" alt=""></a>
+				</div>
+			</div>
+		</header>
+		<div class="main-content">
+			<div class="top">
+				<p>база специалистов</p>
+				<div class="btns">
+					<button type="button">
+						<svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M17.4844 12.557C17.6434 13.5107 17.8023 14.3055 18.1202 15.2592L19.0739 17.9613L18.2792 19.0739H12.716C12.716 19.8687 12.3981 20.6634 11.7623 21.2992C11.1265 21.935 10.3317 22.2529 9.53697 22.2529C8.74222 22.2529 7.78853 21.935 7.31168 21.2992C6.67588 20.6634 6.35798 19.8687 6.35798 19.0739H0.794748L0 17.9613L0.953697 15.2592C1.2716 13.9876 1.5895 12.716 1.5895 11.4444V7.94748C1.5895 6.83483 1.74845 5.72218 2.22529 4.76849C2.70214 3.65584 3.33794 2.86109 4.13269 2.06634C4.92744 1.2716 5.88113 0.794748 6.99378 0.476849C7.78853 0.158949 8.74222 0 9.53697 0C9.21907 0.476849 8.90117 1.11265 8.58328 1.74844C8.26538 1.74844 7.94748 1.74844 7.47063 2.06634C6.67588 2.22529 5.88113 2.70214 5.24534 3.33794C4.60954 3.81479 3.97374 4.60954 3.65584 5.40428C3.33794 6.19903 3.17899 6.99378 3.17899 7.94748V11.4444C3.17899 12.8749 2.86109 14.3055 2.54319 15.736L1.90739 17.4845H17.1666L16.5308 15.736C16.2526 14.8999 16.0952 13.9399 15.9538 13.0752L15.895 12.716C16.5308 12.716 17.0076 12.716 17.4844 12.557ZM9.53697 20.6634C9.85487 20.6634 10.3317 20.5045 10.6496 20.1866C10.9675 19.8687 11.1265 19.5508 11.1265 19.0739H7.94748C7.94748 19.5508 8.10643 19.8687 8.42433 20.1866C8.74222 20.5045 9.21907 20.6634 9.53697 20.6634ZM20.6634 4.76849C20.6634 6.03317 20.161 7.24605 19.2668 8.14032C18.3725 9.03458 17.1596 9.53697 15.895 9.53697C14.6303 9.53697 13.4174 9.03458 12.5231 8.14032C11.6289 7.24605 11.1265 6.03317 11.1265 4.76849C11.1265 3.50381 11.6289 2.29092 12.5231 1.39666C13.4174 0.502393 14.6303 0 15.895 0C17.1596 0 18.3725 0.502393 19.2668 1.39666C20.161 2.29092 20.6634 3.50381 20.6634 4.76849Z" fill-opacity="0.8" />
+							<circle cx="16" cy="5" r="5" fill="#FE375B" />
+						</svg>
+					</button>
+					<button type="button">
+						<svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3373 3.40276V5.88238L15.9267 4.30878V1.3841L15.132 0.589355H0.826538L0.0317899 1.3841V2.1566L0 2.17885V18.5348L0.572218 19.2659L8.5197 21.9999L9.53697 21.2528V19.6633H15.132L15.9267 18.8686V15.9916L14.3373 14.4021V18.0738H9.53697V4.89689L9.01244 4.16572L3.23621 2.17885H14.3373V3.40276ZM7.94748 20.1084L1.5895 17.9784V3.32329L7.94748 5.45321V20.1084ZM18.311 10.8893H10.4112V9.29979H18.2474L15.7042 6.7566L16.8328 5.64395L20.7588 9.55411V10.6827L16.801 14.6246L15.6883 13.512L18.311 10.8893Z" fill-opacity="0.8" />
+						</svg>
+					</button>
+				</div>
+			</div>
+			<div class="base-specialists">
+				<h2>Подберите специалиста</h2>
+				<div class="base-specialists__info">
+					<div class="specialization">
+						<span>Специализация</span>
+						<div class="radios">
+							<div class="radio-wrap">
+								<input type="radio" id="radio" name="default-radio" checked>
+								<label for="radio">
+									<span></span>
+									<img src="img/php-style.svg" alt="">
+								</label>
+							</div>
+							<div class="radio-wrap style2-radio">
+								<input type="radio" id="radio1" name="default-radio">
+								<label for="radio1">
+									<span></span>
+									<span class="img-wrap"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="level">
+						<span>Уровень</span>
+						<div class="radios">
+							<div class="radio-wrap level-radios">
+								<input type="radio" id="radio2" name="default-radio2" checked>
+								<label for="radio2">
+									<span><b>junior</b></span>
+								</label>
+							</div>
+							<div class="radio-wrap level-radios">
+								<input type="radio" id="radio3" name="default-radio2">
+								<label for="radio3">
+									<span><b>middle/senior</b></span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="date-wrap">
+						<span>Даты</span>
+						<div class="time-wrap">
+							<time datetime="2021-07-15">15.07.2021 - </time>
+							<time datetime="2021-09-01">01.09.2021</time>
+						</div>
+						<img src="img/icon_calendar.svg" alt="">
+					</div>
+				</div>
+				<div class="base-specialists__wrap">
+					<div class="base-specialists__top">
+						<p>ФИО</p>
+						<p>Специализация</p>
+						<p>Уровень</p>
+						<p></p>
+						<p></p>
+					</div>
+					<div class="base-specialists__list-wrap custom-scroll">
+						<div class="base-specialists__list">
+							<div class="base-specialists__list-item">
+								<div class="base-specialists__top-wrap">
+									<span class="name">Иванов Алексей Петрович</span>
+									<div class="img-wrap"><img src="img/php.svg" alt=""></div>
+									<span class="level-text">middle/senior</span>
+									<div class="buttons">
+										<a href="#" class="more">Подробнее</a>
+									</div>
+									<div class="checkbox-wrap2">
+										<label>
+											<input type="checkbox">
+											<span></span>
+										</label>
+									</div>
+
+								</div>
+								<div class="base-specialists__bottom-wrap">
+									<div class="base-specialists__content">
+										<div class="left">
+											<div class="name-wrap">
+												<p>Иванов <br> Алексей Петрович</p>
+											</div>
+											<p><span>Специализация</span><img src="img/php-style.svg" alt=""></p>
+											<p><span>Уровень</span><span>middle/senior</span></p>
+											<div class="base-contact-wrap">
+												<p>
+													<svg width="14" height="14" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M3 1H19C20.1 1 21 1.9 21 3V15C21 16.1 20.1 17 19 17H3C1.9 17 1 16.1 1 15V3C1 1.9 1.9 1 3 1Z" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M21 3L11 10L1 3" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+													<a href="#">personalaccaunt@gmail.com</a>
+												</p>
+												<p>
+													<svg width="14" height="14" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9.55423 5.24101L6.17123 1.33601C5.78123 0.886007 5.06623 0.888007 4.61323 1.34201L1.83123 4.12901C1.00323 4.95801 0.766232 6.18901 1.24523 7.17601C4.10685 13.101 8.88528 17.8861 14.8062 20.756C15.7922 21.235 17.0222 20.998 17.8502 20.169L20.6582 17.356C21.1132 16.901 21.1142 16.182 20.6602 15.792L16.7402 12.427C16.3302 12.075 15.6932 12.121 15.2822 12.533L13.9182 13.899C13.8484 13.9722 13.7565 14.0204 13.6566 14.0363C13.5567 14.0522 13.4543 14.0349 13.3652 13.987C11.1357 12.7031 9.28622 10.8512 8.00523 8.62001C7.95726 8.53076 7.93989 8.42823 7.95578 8.32816C7.97168 8.22809 8.01996 8.136 8.09323 8.06601L9.45323 6.70501C9.86523 6.29101 9.91023 5.65101 9.55423 5.24001V5.24101Z" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+													<span class="links">
+														<a href="#">+7 963 847 85 47</a>
+														<a href="#">+7 969 365 89 17</a>
+													</span>
+												</p>
+											</div>
+										</div>
+										<div class="right">
+											<div class="top-info">
+												<ul class="base-info-list">
+													<li>
+														<div class="icon"></div>
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<span>Оценка</span>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+												</ul>
+												<div class="overall-score">
+													<p>Общая оценка</p>
+													<b>86 <span>/ 100</span></b>
+												</div>
+											</div>
+											<div class="bottom-info">
+												<div class="title">
+													<p>Королев Вячеслав <b>/ модератор</b></p>
+													<img src="img/quotation.svg" alt="">
+												</div>
+												<div class="text-scroll-wrap custom-scroll">
+													<p>ЗСовременные технологии достигли такого уровня, что высокотехнологичная концепция общественного уклада, в своём классическом представлении, допускает внедрение дальнейших направлений развития. ЗСовременные технологии достигли такого уровня, что высокотехнологичная концепция общественного уклада, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="base-specialists__list-item">
+								<div class="base-specialists__top-wrap">
+									<span class="name">Попов Андрей Владимирович</span>
+									<div class="img-wrap"><img src="img/php.svg" alt=""></div>
+									<span class="level-text">junior</span>
+									<div class="buttons">
+										<a href="#" class="more">Подробнее</a>
+									</div>
+									<div class="checkbox-wrap2">
+										<label>
+											<input type="checkbox">
+											<span></span>
+										</label>
+									</div>
+
+								</div>
+								<div class="base-specialists__bottom-wrap">
+									<div class="base-specialists__content">
+										<div class="left">
+											<div class="name-wrap">
+												<p>Иванов <br> Алексей Петрович</p>
+											</div>
+											<p><span>Специализация</span><img src="img/php-style.svg" alt=""></p>
+											<p><span>Уровень</span><span>middle/senior</span></p>
+											<div class="base-contact-wrap">
+												<p>
+													<svg width="14" height="14" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M3 1H19C20.1 1 21 1.9 21 3V15C21 16.1 20.1 17 19 17H3C1.9 17 1 16.1 1 15V3C1 1.9 1.9 1 3 1Z" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M21 3L11 10L1 3" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+													<a href="#">personalaccaunt@gmail.com</a>
+												</p>
+												<p>
+													<svg width="14" height="14" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9.55423 5.24101L6.17123 1.33601C5.78123 0.886007 5.06623 0.888007 4.61323 1.34201L1.83123 4.12901C1.00323 4.95801 0.766232 6.18901 1.24523 7.17601C4.10685 13.101 8.88528 17.8861 14.8062 20.756C15.7922 21.235 17.0222 20.998 17.8502 20.169L20.6582 17.356C21.1132 16.901 21.1142 16.182 20.6602 15.792L16.7402 12.427C16.3302 12.075 15.6932 12.121 15.2822 12.533L13.9182 13.899C13.8484 13.9722 13.7565 14.0204 13.6566 14.0363C13.5567 14.0522 13.4543 14.0349 13.3652 13.987C11.1357 12.7031 9.28622 10.8512 8.00523 8.62001C7.95726 8.53076 7.93989 8.42823 7.95578 8.32816C7.97168 8.22809 8.01996 8.136 8.09323 8.06601L9.45323 6.70501C9.86523 6.29101 9.91023 5.65101 9.55423 5.24001V5.24101Z" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+													<span class="links">
+														<a href="#">+7 963 847 85 47</a>
+														<a href="#">+7 969 365 89 17</a>
+													</span>
+												</p>
+											</div>
+										</div>
+										<div class="right">
+											<div class="top-info">
+												<ul class="base-info-list">
+													<li>
+														<div class="icon"></div>
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<span>Оценка</span>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+												</ul>
+												<div class="overall-score">
+													<p>Общая оценка</p>
+													<b>86 <span>/ 100</span></b>
+												</div>
+											</div>
+											<div class="bottom-info">
+												<div class="title">
+													<p>Королев Вячеслав <b>/ модератор</b></p>
+													<img src="img/quotation.svg" alt="">
+												</div>
+												<div class="text-scroll-wrap custom-scroll">
+													<p>ЗСовременные технологии достигли такого уровня, что высокотехнологичная концепция общественного уклада, в своём классическом представлении, допускает внедрение дальнейших направлений развития. ЗСовременные технологии достигли такого уровня, что высокотехнологичная концепция общественного уклада, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="base-specialists__list-item">
+								<div class="base-specialists__top-wrap">
+									<span class="name">Зайцев Антон Борисович</span>
+									<div class="img-wrap"><img src="img/java-svgrepo.svg" alt=""></div>
+									<span class="level-text">middle/senior</span>
+									<div class="buttons">
+										<a href="#" class="more">Подробнее</a>
+									</div>
+									<div class="checkbox-wrap2">
+										<label>
+											<input type="checkbox">
+											<span></span>
+										</label>
+									</div>
+
+								</div>
+								<div class="base-specialists__bottom-wrap">
+									<div class="base-specialists__content">
+										<div class="left">
+											<div class="name-wrap">
+												<p>Иванов <br> Алексей Петрович</p>
+											</div>
+											<p><span>Специализация</span><img src="img/php-style.svg" alt=""></p>
+											<p><span>Уровень</span><span>middle/senior</span></p>
+											<div class="base-contact-wrap">
+												<p>
+													<svg width="14" height="14" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M3 1H19C20.1 1 21 1.9 21 3V15C21 16.1 20.1 17 19 17H3C1.9 17 1 16.1 1 15V3C1 1.9 1.9 1 3 1Z" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M21 3L11 10L1 3" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+													<a href="#">personalaccaunt@gmail.com</a>
+												</p>
+												<p>
+													<svg width="14" height="14" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9.55423 5.24101L6.17123 1.33601C5.78123 0.886007 5.06623 0.888007 4.61323 1.34201L1.83123 4.12901C1.00323 4.95801 0.766232 6.18901 1.24523 7.17601C4.10685 13.101 8.88528 17.8861 14.8062 20.756C15.7922 21.235 17.0222 20.998 17.8502 20.169L20.6582 17.356C21.1132 16.901 21.1142 16.182 20.6602 15.792L16.7402 12.427C16.3302 12.075 15.6932 12.121 15.2822 12.533L13.9182 13.899C13.8484 13.9722 13.7565 14.0204 13.6566 14.0363C13.5567 14.0522 13.4543 14.0349 13.3652 13.987C11.1357 12.7031 9.28622 10.8512 8.00523 8.62001C7.95726 8.53076 7.93989 8.42823 7.95578 8.32816C7.97168 8.22809 8.01996 8.136 8.09323 8.06601L9.45323 6.70501C9.86523 6.29101 9.91023 5.65101 9.55423 5.24001V5.24101Z" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+													<span class="links">
+														<a href="#">+7 963 847 85 47</a>
+														<a href="#">+7 969 365 89 17</a>
+													</span>
+												</p>
+											</div>
+										</div>
+										<div class="right">
+											<div class="top-info">
+												<ul class="base-info-list">
+													<li>
+														<div class="icon"></div>
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<span>Оценка</span>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+												</ul>
+												<div class="overall-score">
+													<p>Общая оценка</p>
+													<b>86 <span>/ 100</span></b>
+												</div>
+											</div>
+											<div class="bottom-info">
+												<div class="title">
+													<p>Королев Вячеслав <b>/ модератор</b></p>
+													<img src="img/quotation.svg" alt="">
+												</div>
+												<div class="text-scroll-wrap custom-scroll">
+													<p>ЗСовременные технологии достигли такого уровня, что высокотехнологичная концепция общественного уклада, в своём классическом представлении, допускает внедрение дальнейших направлений развития. ЗСовременные технологии достигли такого уровня, что высокотехнологичная концепция общественного уклада, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="base-specialists__list-item">
+								<div class="base-specialists__top-wrap">
+									<span class="name">Терентьев Вячеслав Станиславович</span>
+									<div class="img-wrap"><img src="img/java-svgrepo.svg" alt=""></div>
+									<span class="level-text">middle/senior</span>
+									<div class="buttons">
+										<a href="#" class="more">Подробнее</a>
+									</div>
+									<div class="checkbox-wrap2">
+										<label>
+											<input type="checkbox">
+											<span></span>
+										</label>
+									</div>
+
+								</div>
+								<div class="base-specialists__bottom-wrap">
+									<div class="base-specialists__content">
+										<div class="left">
+											<div class="name-wrap">
+												<p>Иванов <br> Алексей Петрович</p>
+											</div>
+											<p><span>Специализация</span><img src="img/php-style.svg" alt=""></p>
+											<p><span>Уровень</span><span>middle/senior</span></p>
+											<div class="base-contact-wrap">
+												<p>
+													<svg width="14" height="14" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M3 1H19C20.1 1 21 1.9 21 3V15C21 16.1 20.1 17 19 17H3C1.9 17 1 16.1 1 15V3C1 1.9 1.9 1 3 1Z" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M21 3L11 10L1 3" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+													<a href="#">personalaccaunt@gmail.com</a>
+												</p>
+												<p>
+													<svg width="14" height="14" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9.55423 5.24101L6.17123 1.33601C5.78123 0.886007 5.06623 0.888007 4.61323 1.34201L1.83123 4.12901C1.00323 4.95801 0.766232 6.18901 1.24523 7.17601C4.10685 13.101 8.88528 17.8861 14.8062 20.756C15.7922 21.235 17.0222 20.998 17.8502 20.169L20.6582 17.356C21.1132 16.901 21.1142 16.182 20.6602 15.792L16.7402 12.427C16.3302 12.075 15.6932 12.121 15.2822 12.533L13.9182 13.899C13.8484 13.9722 13.7565 14.0204 13.6566 14.0363C13.5567 14.0522 13.4543 14.0349 13.3652 13.987C11.1357 12.7031 9.28622 10.8512 8.00523 8.62001C7.95726 8.53076 7.93989 8.42823 7.95578 8.32816C7.97168 8.22809 8.01996 8.136 8.09323 8.06601L9.45323 6.70501C9.86523 6.29101 9.91023 5.65101 9.55423 5.24001V5.24101Z" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+													<span class="links">
+														<a href="#">+7 963 847 85 47</a>
+														<a href="#">+7 969 365 89 17</a>
+													</span>
+												</p>
+											</div>
+										</div>
+										<div class="right">
+											<div class="top-info">
+												<ul class="base-info-list">
+													<li>
+														<div class="icon"></div>
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<span>Оценка</span>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+												</ul>
+												<div class="overall-score">
+													<p>Общая оценка</p>
+													<b>86 <span>/ 100</span></b>
+												</div>
+											</div>
+											<div class="bottom-info">
+												<div class="title">
+													<p>Королев Вячеслав <b>/ модератор</b></p>
+													<img src="img/quotation.svg" alt="">
+												</div>
+												<div class="text-scroll-wrap custom-scroll">
+													<p>ЗСовременные технологии достигли такого уровня, что высокотехнологичная концепция общественного уклада, в своём классическом представлении, допускает внедрение дальнейших направлений развития. ЗСовременные технологии достигли такого уровня, что высокотехнологичная концепция общественного уклада, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="base-specialists__list-item">
+								<div class="base-specialists__top-wrap">
+									<span class="name">Иванов Алексей Петрович</span>
+									<div class="img-wrap"><img src="img/java-svgrepo.svg" alt=""></div>
+									<span class="level-text">middle/senior</span>
+									<div class="buttons">
+										<a href="#" class="more">Подробнее</a>
+									</div>
+									<div class="checkbox-wrap2">
+										<label>
+											<input type="checkbox">
+											<span></span>
+										</label>
+									</div>
+
+								</div>
+								<div class="base-specialists__bottom-wrap">
+									<div class="base-specialists__content">
+										<div class="left">
+											<div class="name-wrap">
+												<p>Иванов <br> Алексей Петрович</p>
+											</div>
+											<p><span>Специализация</span><img src="img/php-style.svg" alt=""></p>
+											<p><span>Уровень</span><span>middle/senior</span></p>
+											<div class="base-contact-wrap">
+												<p>
+													<svg width="14" height="14" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M3 1H19C20.1 1 21 1.9 21 3V15C21 16.1 20.1 17 19 17H3C1.9 17 1 16.1 1 15V3C1 1.9 1.9 1 3 1Z" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M21 3L11 10L1 3" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+													<a href="#">personalaccaunt@gmail.com</a>
+												</p>
+												<p>
+													<svg width="14" height="14" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9.55423 5.24101L6.17123 1.33601C5.78123 0.886007 5.06623 0.888007 4.61323 1.34201L1.83123 4.12901C1.00323 4.95801 0.766232 6.18901 1.24523 7.17601C4.10685 13.101 8.88528 17.8861 14.8062 20.756C15.7922 21.235 17.0222 20.998 17.8502 20.169L20.6582 17.356C21.1132 16.901 21.1142 16.182 20.6602 15.792L16.7402 12.427C16.3302 12.075 15.6932 12.121 15.2822 12.533L13.9182 13.899C13.8484 13.9722 13.7565 14.0204 13.6566 14.0363C13.5567 14.0522 13.4543 14.0349 13.3652 13.987C11.1357 12.7031 9.28622 10.8512 8.00523 8.62001C7.95726 8.53076 7.93989 8.42823 7.95578 8.32816C7.97168 8.22809 8.01996 8.136 8.09323 8.06601L9.45323 6.70501C9.86523 6.29101 9.91023 5.65101 9.55423 5.24001V5.24101Z" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+													<span class="links">
+														<a href="#">+7 963 847 85 47</a>
+														<a href="#">+7 969 365 89 17</a>
+													</span>
+												</p>
+											</div>
+										</div>
+										<div class="right">
+											<div class="top-info">
+												<ul class="base-info-list">
+													<li>
+														<div class="icon"></div>
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<span>Оценка</span>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+												</ul>
+												<div class="overall-score">
+													<p>Общая оценка</p>
+													<b>86 <span>/ 100</span></b>
+												</div>
+											</div>
+											<div class="bottom-info">
+												<div class="title">
+													<p>Королев Вячеслав <b>/ модератор</b></p>
+													<img src="img/quotation.svg" alt="">
+												</div>
+												<div class="text-scroll-wrap custom-scroll">
+													<p>ЗСовременные технологии достигли такого уровня, что высокотехнологичная концепция общественного уклада, в своём классическом представлении, допускает внедрение дальнейших направлений развития. ЗСовременные технологии достигли такого уровня, что высокотехнологичная концепция общественного уклада, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="base-specialists__list-item">
+								<div class="base-specialists__top-wrap">
+									<span class="name">Попов Андрей Владимирович</span>
+									<div class="img-wrap"><img src="img/java-svgrepo.svg" alt=""></div>
+									<span class="level-text">junior</span>
+									<div class="buttons">
+										<a href="#" class="more">Подробнее</a>
+									</div>
+									<div class="checkbox-wrap2">
+										<label>
+											<input type="checkbox">
+											<span></span>
+										</label>
+									</div>
+
+								</div>
+								<div class="base-specialists__bottom-wrap">
+									<div class="base-specialists__content">
+										<div class="left">
+											<div class="name-wrap">
+												<p>Иванов <br> Алексей Петрович</p>
+											</div>
+											<p><span>Специализация</span><img src="img/php-style.svg" alt=""></p>
+											<p><span>Уровень</span><span>middle/senior</span></p>
+											<div class="base-contact-wrap">
+												<p>
+													<svg width="14" height="14" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M3 1H19C20.1 1 21 1.9 21 3V15C21 16.1 20.1 17 19 17H3C1.9 17 1 16.1 1 15V3C1 1.9 1.9 1 3 1Z" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M21 3L11 10L1 3" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+													<a href="#">personalaccaunt@gmail.com</a>
+												</p>
+												<p>
+													<svg width="14" height="14" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9.55423 5.24101L6.17123 1.33601C5.78123 0.886007 5.06623 0.888007 4.61323 1.34201L1.83123 4.12901C1.00323 4.95801 0.766232 6.18901 1.24523 7.17601C4.10685 13.101 8.88528 17.8861 14.8062 20.756C15.7922 21.235 17.0222 20.998 17.8502 20.169L20.6582 17.356C21.1132 16.901 21.1142 16.182 20.6602 15.792L16.7402 12.427C16.3302 12.075 15.6932 12.121 15.2822 12.533L13.9182 13.899C13.8484 13.9722 13.7565 14.0204 13.6566 14.0363C13.5567 14.0522 13.4543 14.0349 13.3652 13.987C11.1357 12.7031 9.28622 10.8512 8.00523 8.62001C7.95726 8.53076 7.93989 8.42823 7.95578 8.32816C7.97168 8.22809 8.01996 8.136 8.09323 8.06601L9.45323 6.70501C9.86523 6.29101 9.91023 5.65101 9.55423 5.24001V5.24101Z" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+													<span class="links">
+														<a href="#">+7 963 847 85 47</a>
+														<a href="#">+7 969 365 89 17</a>
+													</span>
+												</p>
+											</div>
+										</div>
+										<div class="right">
+											<div class="top-info">
+												<ul class="base-info-list">
+													<li>
+														<div class="icon"></div>
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<span>Оценка</span>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+												</ul>
+												<div class="overall-score">
+													<p>Общая оценка</p>
+													<b>86 <span>/ 100</span></b>
+												</div>
+											</div>
+											<div class="bottom-info">
+												<div class="title">
+													<p>Королев Вячеслав <b>/ модератор</b></p>
+													<img src="img/quotation.svg" alt="">
+												</div>
+												<div class="text-scroll-wrap custom-scroll">
+													<p>ЗСовременные технологии достигли такого уровня, что высокотехнологичная концепция общественного уклада, в своём классическом представлении, допускает внедрение дальнейших направлений развития. ЗСовременные технологии достигли такого уровня, что высокотехнологичная концепция общественного уклада, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="base-specialists__list-item">
+								<div class="base-specialists__top-wrap">
+									<span class="name">Зайцев Антон Борисович</span>
+									<div class="img-wrap"><img src="img/java-svgrepo.svg" alt=""></div>
+									<span class="level-text">middle/senior</span>
+									<div class="buttons">
+										<a href="#" class="more">Подробнее</a>
+									</div>
+									<div class="checkbox-wrap2">
+										<label>
+											<input type="checkbox">
+											<span></span>
+										</label>
+									</div>
+
+								</div>
+								<div class="base-specialists__bottom-wrap">
+									<div class="base-specialists__content">
+										<div class="left">
+											<div class="name-wrap">
+												<p>Иванов <br> Алексей Петрович</p>
+											</div>
+											<p><span>Специализация</span><img src="img/php-style.svg" alt=""></p>
+											<p><span>Уровень</span><span>middle/senior</span></p>
+											<div class="base-contact-wrap">
+												<p>
+													<svg width="14" height="14" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M3 1H19C20.1 1 21 1.9 21 3V15C21 16.1 20.1 17 19 17H3C1.9 17 1 16.1 1 15V3C1 1.9 1.9 1 3 1Z" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M21 3L11 10L1 3" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+													<a href="#">personalaccaunt@gmail.com</a>
+												</p>
+												<p>
+													<svg width="14" height="14" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9.55423 5.24101L6.17123 1.33601C5.78123 0.886007 5.06623 0.888007 4.61323 1.34201L1.83123 4.12901C1.00323 4.95801 0.766232 6.18901 1.24523 7.17601C4.10685 13.101 8.88528 17.8861 14.8062 20.756C15.7922 21.235 17.0222 20.998 17.8502 20.169L20.6582 17.356C21.1132 16.901 21.1142 16.182 20.6602 15.792L16.7402 12.427C16.3302 12.075 15.6932 12.121 15.2822 12.533L13.9182 13.899C13.8484 13.9722 13.7565 14.0204 13.6566 14.0363C13.5567 14.0522 13.4543 14.0349 13.3652 13.987C11.1357 12.7031 9.28622 10.8512 8.00523 8.62001C7.95726 8.53076 7.93989 8.42823 7.95578 8.32816C7.97168 8.22809 8.01996 8.136 8.09323 8.06601L9.45323 6.70501C9.86523 6.29101 9.91023 5.65101 9.55423 5.24001V5.24101Z" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+													<span class="links">
+														<a href="#">+7 963 847 85 47</a>
+														<a href="#">+7 969 365 89 17</a>
+													</span>
+												</p>
+											</div>
+										</div>
+										<div class="right">
+											<div class="top-info">
+												<ul class="base-info-list">
+													<li>
+														<div class="icon"></div>
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<span>Оценка</span>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+												</ul>
+												<div class="overall-score">
+													<p>Общая оценка</p>
+													<b>86 <span>/ 100</span></b>
+												</div>
+											</div>
+											<div class="bottom-info">
+												<div class="title">
+													<p>Королев Вячеслав <b>/ модератор</b></p>
+													<img src="img/quotation.svg" alt="">
+												</div>
+												<div class="text-scroll-wrap custom-scroll">
+													<p>ЗСовременные технологии достигли такого уровня, что высокотехнологичная концепция общественного уклада, в своём классическом представлении, допускает внедрение дальнейших направлений развития. ЗСовременные технологии достигли такого уровня, что высокотехнологичная концепция общественного уклада, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="base-specialists__list-item">
+								<div class="base-specialists__top-wrap">
+									<span class="name">Терентьев Вячеслав Станиславович</span>
+									<div class="img-wrap"><img src="img/java-svgrepo.svg" alt=""></div>
+									<span class="level-text">middle/senior</span>
+									<div class="buttons">
+										<a href="#" class="more">Подробнее</a>
+									</div>
+									<div class="checkbox-wrap2">
+										<label>
+											<input type="checkbox">
+											<span></span>
+										</label>
+									</div>
+
+								</div>
+								<div class="base-specialists__bottom-wrap">
+									<div class="base-specialists__content">
+										<div class="left">
+											<div class="name-wrap">
+												<p>Иванов <br> Алексей Петрович</p>
+											</div>
+											<p><span>Специализация</span><img src="img/php-style.svg" alt=""></p>
+											<p><span>Уровень</span><span>middle/senior</span></p>
+											<div class="base-contact-wrap">
+												<p>
+													<svg width="14" height="14" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M3 1H19C20.1 1 21 1.9 21 3V15C21 16.1 20.1 17 19 17H3C1.9 17 1 16.1 1 15V3C1 1.9 1.9 1 3 1Z" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M21 3L11 10L1 3" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+													<a href="#">personalaccaunt@gmail.com</a>
+												</p>
+												<p>
+													<svg width="14" height="14" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9.55423 5.24101L6.17123 1.33601C5.78123 0.886007 5.06623 0.888007 4.61323 1.34201L1.83123 4.12901C1.00323 4.95801 0.766232 6.18901 1.24523 7.17601C4.10685 13.101 8.88528 17.8861 14.8062 20.756C15.7922 21.235 17.0222 20.998 17.8502 20.169L20.6582 17.356C21.1132 16.901 21.1142 16.182 20.6602 15.792L16.7402 12.427C16.3302 12.075 15.6932 12.121 15.2822 12.533L13.9182 13.899C13.8484 13.9722 13.7565 14.0204 13.6566 14.0363C13.5567 14.0522 13.4543 14.0349 13.3652 13.987C11.1357 12.7031 9.28622 10.8512 8.00523 8.62001C7.95726 8.53076 7.93989 8.42823 7.95578 8.32816C7.97168 8.22809 8.01996 8.136 8.09323 8.06601L9.45323 6.70501C9.86523 6.29101 9.91023 5.65101 9.55423 5.24001V5.24101Z" stroke="#6F7D94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+													<span class="links">
+														<a href="#">+7 963 847 85 47</a>
+														<a href="#">+7 969 365 89 17</a>
+													</span>
+												</p>
+											</div>
+										</div>
+										<div class="right">
+											<div class="top-info">
+												<ul class="base-info-list">
+													<li>
+														<div class="icon"></div>
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<span>Оценка</span>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+													<li>
+														<img src="img/result.svg" alt="">
+														<span>Name 1</span>
+														<span>Name 1</span>
+														<b>86 / 100</b>
+													</li>
+												</ul>
+												<div class="overall-score">
+													<p>Общая оценка</p>
+													<b>86 <span>/ 100</span></b>
+												</div>
+											</div>
+											<div class="bottom-info">
+												<div class="title">
+													<p>Королев Вячеслав <b>/ модератор</b></p>
+													<img src="img/quotation.svg" alt="">
+												</div>
+												<div class="text-scroll-wrap custom-scroll">
+													<p>ЗСовременные технологии достигли такого уровня, что высокотехнологичная концепция общественного уклада, в своём классическом представлении, допускает внедрение дальнейших направлений развития. ЗСовременные технологии достигли такого уровня, что высокотехнологичная концепция общественного уклада, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="libs/libs-js/jquery-3.4.1.min.js"></script>
+	<script src="libs/libs-js/jquery.smooth-scroll.min.js"></script>
+	<script src="libs/libs-js/swiper.js"></script>
+	<script src="libs/libs-js/jquery.validate.js"></script>
+	<script src="libs/libs-js/jquery.inputmask.bundle.min.js"></script>
+	<script src="libs/libs-js/jquery.magnific-popup.min.js"></script>
+	<script src="libs/libs-js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="libs/libs-js/wow.min.js"></script>
+	<script src="js/script.js"></script>
+
+
+
+</body></html>

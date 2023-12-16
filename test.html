@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<title>EmplyMe</title>
+	<link rel="stylesheet" href="libs/libs-css/magnific-popup.css">
+	<link rel="stylesheet" href="libs/libs-css/select2.min.css">
+	<link rel="stylesheet" href="libs/libs-css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body-test">
+	<header class="header-test container">
+		<a href="specialists.html" class="logo header-test__logo-link">логотип</a>
+		<div class="header-test__title">
+			<span class="header-test__caption text-color-gray">Вы проходите тест:</span>
+			<span class="header-test__name text-color-white">Начальный (Junior)</span>
+			<img class="header-test__icon" src="img/php.svg">
+		</div>
+	</header>
+	<section class="breadcrumb-test">
+		<div class="breadcrumb-test__category">
+			<span class="breadcrumb-test__category-caption text-color-gray">Категория / </span>
+			<span class="breadcrumb-test__category-name text-color-blue">Типы данных, переменные, область видимости</span>
+		</div>
+		<div class="breadcrumb-test__level">
+			<span class="breadcrumb-test__level-caption text-color-gray">Уровень / </span>
+			<span class="breadcrumb-test__level-name text-color-blue">СРЕДНИЙ</span>
+		</div>
+	</section>
+	<section class="canvas-test container">
+		<div class="canvas-test__wrap">
+
+			<div class="canvas-test__header">
+				<div class="canvas-test__number">
+					<span class="canvas-test__number-order">01</span>
+					<span class="canvas-test__number-all"> / 05</span>
+				</div>
+				<p data-title="test" class="canvas-test__header-title">Впишите недостающий фрагмент кода</p>
+				<span class="canvas-test__header-prev" style="display: none;" data-test="1"><img class="canvas-test__header-prev-arrow" src="img/arrow.svg">Назад</span>
+				<img class="canvas-test__header-icon" src="img/php-bg.svg">
+			</div>
+
+
+			<div data-question="1" class="canvas-test__question">
+				<p class="canvas-test__question-text text-color-black">const test = document.querySelectorAll(‘.test’);<br>
+					&nbsp;&nbsp;test.forEach((el) => {<br>
+					&nbsp;&nbsp;el.addEventListener(‘click’, (e) => {<br>
+					&nbsp;&nbsp;e.preventDefault();<br>
+					&nbsp;&nbsp;el.<span class="canvas-test__question-area-answer"></span>.add(‘test1’);<br>
+					&nbsp;&nbsp;});<br>
+					});</p>
+			</div>
+
+			<div data-answer="1" class="canvas-test__answer">
+				<p class="canvas-test__answer-caption text-color-gray">Напишите ваш вариант ответа, чтобы при клике конкретный элемент test получил класс test1</p>
+				<div class="input">
+					<input class="canvas-test__answer-input-text" type="text" name="answer-1" placeholder="Ответ">
+					<span class="canvas-test__answer-icon-delete"></span>
+				</div>
+			</div>
+
+
+			<div data-question="2" class="canvas-test__question" style="display:none">
+				<p class="canvas-test__question-text text-color-black">Банальные, но неопровержимые выводы, а также акционеры крупнейших компаний освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, представлены в исключительно положительном свете. Противоположная точка зрения подразумевает, что многие известные личности преданы социально-демократической анафеме.</p>
+			</div>
+
+			<div data-answer="2" class="canvas-test__answer" style="display:none">
+				<label class="canvas-test__answer-input-radio-label">
+					Банальные, но неопровержимые выводы, а также акционеры крупнейших компаний освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы
+					<input class="canvas-test__answer-input-radio" type="radio" name="answer-2" value="1">
+				</label>
+				<label class="canvas-test__answer-input-radio-label">
+					Противоположная точка зрения подразумевает, что многие известные личности преданы социально-демократической
+					<input class="canvas-test__answer-input-radio" type="radio" name="answer-2" value="2">
+				</label>
+				<label class="canvas-test__answer-input-radio-label">
+					Противоположная точка зрения подразумевает, что многие известные личности преданы социально-демократической
+					<input class="canvas-test__answer-input-radio" type="radio" name="answer-2" value="3">
+				</label>
+				<label class="canvas-test__answer-input-radio-label">
+					Банальные, но неопровержимые выводы, а также акционеры крупнейших компаний освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы
+					<input class="canvas-test__answer-input-radio" type="radio" name="answer-2" value="4">
+				</label>
+			</div>
+
+			<div data-question="3" class="canvas-test__question" style="display:none;">
+				<p class="canvas-test__question-text text-color-black">Банальные, но неопровержимые выводы, а также акционеры крупнейших компаний освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, представлены в исключительно положительном свете. Противоположная точка зрения подразумевает, что многие известные личности преданы социально-демократической анафеме.</p>
+			</div>
+
+			<div data-answer="3" class="canvas-test__answer" style="display:none;">
+				<label class="canvas-test__answer-input-checkbox-label">
+					Банальные, но неопровержимые выводы, а также акционеры крупнейших компаний освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы
+					<input class="canvas-test__answer-input-checkbox" type="checkbox" name="answer-3-1" value="1">
+				</label>
+				<label class="canvas-test__answer-input-checkbox-label">
+					Противоположная точка зрения подразумевает, что многие известные личности преданы социально-демократической
+					<input class="canvas-test__answer-input-checkbox" type="checkbox" name="answer-3-2" value="2">
+				</label>
+				<label class="canvas-test__answer-input-checkbox-label">
+					Противоположная точка зрения подразумевает, что многие известные личности преданы социально-демократической
+					<input class="canvas-test__answer-input-checkbox" type="checkbox" name="answer-3-3" value="3">
+				</label>
+				<label class="canvas-test__answer-input-checkbox-label">
+					Банальные, но неопровержимые выводы, а также акционеры крупнейших компаний освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы
+					<input class="canvas-test__answer-input-checkbox" type="checkbox" name="answer-3-4" value="4">
+				</label>
+			</div>
+
+			<div data-question="4" class="canvas-test__question text-center" style="display:none;">
+				<p class="canvas-test__question-text canvas-test__question-text-items text-color-black">
+					<span class="canvas-test__question-text-item">Test.assertEquals(likes([])
+					</span>
+					<span class="canvas-test__question-text-item">likes');</span>
+					<span class="canvas-test__question-text-item">'no</span>
+					<span class="canvas-test__question-text-item">one</span>
+					<span class="canvas-test__question-text-item">describe</span>
+					<span class="canvas-test__question-text-item">(`</span>
+					<span class="canvas-test__question-text-item">() {</span>
+					<span class="canvas-test__question-text-item">tests</span>
+					<span class="canvas-test__question-text-item">'example</span>
+					<span class="canvas-test__question-text-item">function</span>
+				</p>
+			</div>
+
+			<div data-answer="4" class="canvas-test__answer" style="display:none;">
+				<p class="canvas-test__answer-caption text-color-gray">Ваш вариант ответа</p>
+				<div class="input">
+					<input class="canvas-test__answer-input-text" type="text" name="answer-4" placeholder="Ответ">
+					<span class="canvas-test__answer-icon-delete"></span>
+
+				</div>
+			</div>
+
+
+
+			<div data-question="5" class="canvas-test__question" style="display:none;">
+				<div class="canvas-test__question-connect">
+					<p class="canvas-test__question-connect-name">Вопросы:</p>
+					<div class="canvas-test__question-connect-item" data-item="1">
+						<p class="canvas-test__question-connect-item-title">1. Термин или определение чего-либо, термин или</p>
+						<span class="canvas-test__question-connect-item-btn" data-color="blue"></span>
+					</div>
+					<div class="canvas-test__question-connect-item" data-item="2">
+						<p class="canvas-test__question-connect-item-title">2. Термин или определение чего-либо, термин или</p>
+						<span class="canvas-test__question-connect-item-btn" data-color="purple"></span>
+					</div>
+					<div class="canvas-test__question-connect-item" data-item="3">
+						<p class="canvas-test__question-connect-item-title">3. Термин или определение чего-либо, термин или</p>
+						<span class="canvas-test__question-connect-item-btn" data-color="red"></span>
+					</div>
+					<div class="canvas-test__question-connect-item" data-item="4">
+						<p class="canvas-test__question-connect-item-title">4. Термин или определение чего-либо, термин или</p>
+						<span class="canvas-test__question-connect-item-btn" data-color="orange"></span>
+					</div>
+					<div class="canvas-test__question-connect-item" data-item="5">
+						<p class="canvas-test__question-connect-item-title">5. Термин или определение чего-либо, термин или</p>
+						<span class="canvas-test__question-connect-item-btn" data-color="yellow"></span>
+					</div>
+				</div>
+				<div class="canvas-test__question-connect">
+					<p class="canvas-test__question-connect-name canvas-test__question-connect-item_right">Ответы:</p>
+					<div class="canvas-test__question-connect-item canvas-test__question-connect-item_right" data-item="1">
+						<p class="canvas-test__question-connect-item-title canvas-test__question-connect-item-order">a. Ответ на какой-то пункт 1 Ответ на какой-то</p>
+						<span class="canvas-test__question-connect-item-btn" data-color="blue"></span>
+					</div>
+					<div class="canvas-test__question-connect-item canvas-test__question-connect-item_right" data-item="2">
+						<p class="canvas-test__question-connect-item-title canvas-test__question-connect-item-order">b. Ответ на какой-то пункт 2 Ответ на какой-то</p>
+						<span class="canvas-test__question-connect-item-btn" data-color="purple"></span>
+					</div>
+					<div class="canvas-test__question-connect-item canvas-test__question-connect-item_right" data-item="3">
+						<p class="canvas-test__question-connect-item-title canvas-test__question-connect-item-order">c. Ответ на какой-то пункт 3 Ответ на какой-то</p>
+						<span class="canvas-test__question-connect-item-btn" data-color="red"></span>
+					</div>
+					<div class="canvas-test__question-connect-item canvas-test__question-connect-item_right" data-item="4">
+						<p class="canvas-test__question-connect-item-title canvas-test__question-connect-item-order">d. Ответ на какой-то пункт 4 Ответ на какой-то</p>
+						<span class="canvas-test__question-connect-item-btn" data-color="orange"></span>
+					</div>
+					<div class="canvas-test__question-connect-item canvas-test__question-connect-item_right" data-item="5">
+						<p class="canvas-test__question-connect-item-title canvas-test__question-connect-item-order">e. Ответ на какой-то пункт 5 Ответ на какой-то</p>
+						<span class="canvas-test__question-connect-item-btn" data-color="yellow"></span>
+					</div>
+				</div>
+			</div>
+
+			<div data-answer="5" class="canvas-test__answer" style="display:none;">
+				<p class="canvas-test__answer-caption text-color-gray">Ваши варианты ответов</p>
+				<div class="input">
+
+					<input class="canvas-test__answer-input-text" type="text" name="answer-5" placeholder="Ответ">
+					<span class="canvas-test__answer-icon-delete"></span>
+				</div>
+			</div>
+
+			<div class="canvas-test__button">
+				<div class="canvas-test__button-check canvas-test__button-check_disabled accept" data-checked="false" data-step="1"><span class="canvas-test__button-check-text">Принять ответ</span></div>
+				<div class="canvas-test__points">
+					<img class="canvas-test__points-coin" src="img/coin.svg">
+					<span class="canvas-test__points-caption">Вы набрали</span>
+					<p class="canvas-test__points-count">
+						<span class="canvas-test__points-value">30</span>
+						<span class="canvas-test__points-all"> из 100</span>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section class="canvas-test canvas-result container" style="display: none;">
+		<div class="canvas-test__wrap canvas-result_wrap">
+			<div class="canvas-test__header">
+				<p class="canvas-test__header-title canvas-test__header-title_result">РЕЗУЛЬТАТЫ ТЕСТИРОВАНИЯ</p>
+				<img class="canvas-test__header-icon" src="img/php-bg.svg">
+			</div>
+			<div class="canvas-result__inner-wrap">
+				<div class="canvas-result__names-wrap">
+					<div class="canvas-result__names-items">
+						<span class="canvas-result__names-item canvas-result__names-item-head">Name 1</span>
+						<span class="canvas-result__names-item canvas-result__names-item-head">Name 1</span>
+						<span class="canvas-result__names-item canvas-result__names-item-head">Оценка</span>
+					</div>
+					<div class="canvas-result__names-items">
+						<img class="canvas-result__names-item-icon" src="img/result.svg">
+						<span class="canvas-result__names-item">Name 1 Name 1</span>
+						<span class="canvas-result__names-item">Name 1 Name 1</span>
+						<span class="canvas-result__names-item canvas-result__names-item-value" style="font-weight: bold">86 / 100</span>
+					</div>
+					<div class="canvas-result__names-items">
+						<img class="canvas-result__names-item-icon" src="img/result.svg">
+						<span class="canvas-result__names-item">Name 2 Name 2</span>
+						<span class="canvas-result__names-item">Name 2 Name 2</span>
+						<span class="canvas-result__names-item canvas-result__names-item-value" style="font-weight: bold">86 / 100</span>
+					</div>
+					<div class="canvas-result__names-items">
+						<img class="canvas-result__names-item-icon" src="img/result.svg">
+						<span class="canvas-result__names-item">Name 3 Name 3</span>
+						<span class="canvas-result__names-item">Name 3 Name 3</span>
+						<span class="canvas-result__names-item canvas-result__names-item-value" style="font-weight: bold">86 / 100</span>
+					</div>
+				</div>
+				<div class="canvas-result__score canvas-result__score-first">
+					<p class="canvas-result__score-title">Общая оценка</p>
+					<span class="canvas-result__score-value">86</span>
+					<span class="canvas-result__score-all">/ 100</span>
+				</div>
+			</div>
+			<div class="canvas-result__inner-wrap-text">
+				<div class="canvas-result__block-text">
+					<p>Банальные, но неопровержимые выводы, а также акционеры крупнейших компаний освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, представлены в исключительно положительном свете. Противоположная точка зрения подразумевает</p>
+				</div>
+				<div class="canvas-result__inner-wrap-score-link">
+					<div class="canvas-result__score canvas-result__score-second">
+						<p class="canvas-result__score-title">Общая оценка</p>
+						<span class="canvas-result__score-value">86</span>
+						<span class="canvas-result__score-all">/ 100</span>
+					</div>
+					<div class="canvas-result__block-social">
+						<p class="canvas-result__block-social-title">Поделиться в социальных сетях<img class="canvas-result__block-social-title-arrow" src="img/social-arrow.svg"></p>
+						<a class="canvas-result__block-social-link" href="#"><img class="canvas-result__block-social-img" src="img/mail.svg"></a>
+						<a class="canvas-result__block-social-link" href="#"><img class="canvas-result__block-social-img" src="img/whatsapp.svg"></a>
+						<a class="canvas-result__block-social-link" href="#"><img class="canvas-result__block-social-img" src="img/telegram.svg"></a>
+						<a class="canvas-result__block-social-link" href="#"><img class="canvas-result__block-social-img" src="img/twitter.svg"></a>
+						<a class="canvas-result__block-social-link" href="#"><img class="canvas-result__block-social-img" src="img/vkontakte.svg"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script src="libs/libs-js/jquery-3.4.1.min.js"></script>
+	<script src="libs/libs-js/jquery.smooth-scroll.min.js"></script>
+	<script src="libs/libs-js/swiper.js"></script>
+	<script src="libs/libs-js/jquery.validate.js"></script>
+	<script src="libs/libs-js/jquery.inputmask.bundle.min.js"></script>
+	<script src="libs/libs-js/jquery.magnific-popup.min.js"></script>
+	<script src="libs/libs-js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="libs/libs-js/wow.min.js"></script>
+	<script src="js/script.js"></script>
+</body></html>
